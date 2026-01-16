@@ -1,0 +1,210 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+    overflow-x: hidden;
+   background-color: #f8f8f8;
+
+}
+
+.header {
+    width: 100%;
+    height: 7rem;
+    background-color: #e6f2f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header__container {
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.header__logo-image {
+    width: 10rem;
+    padding: 1rem 2rem;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    gap: 4rem;
+    align-items: center;
+}
+
+
+.header__nav-item {
+    margin-left: 2rem;
+}
+
+.header__nav-link:link,
+.header__nav-link:visited {
+    display: inline-block;
+  text-decoration: none;
+  color: #d66c37;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.header__nav-link:hover,
+.header__nav-link:active {
+    color: #9c4317;
+}
+
+.header__nav-link.nav-cta:link,
+.header__nav-link.nav-cta:visited {
+    padding: 1rem 2rem;
+    background-color: #29b5d1;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header__nav-link.nav-cta:hover,
+.header__nav-link.nav-cta:active {
+    background-color: #4fa6b8;
+}
+
+/* HERO SECTION */
+
+.section-hero {
+  padding: 4.8rem 0 9.6rem 0;
+
+}
+
+.hero {
+    max-width: 130rem;
+    margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+    gap: 3.2rem;
+}
+
+.section-hero__image {
+    width: 20rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heading--primary {
+    font-size: 4rem;
+    color: #14697a;
+    text-align: center;
+}
+
+.heading--secondary {
+    font-size: 3.2rem;
+    color: #b15a2f;
+    margin: 0 auto 4.8rem auto;
+    text-align: center;
+}
+
+.description-text {
+    font-size: 2rem;
+    color: #555;
+    text-align: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.hero__buttons {
+    display: flex;
+    gap: 2.4rem;
+    margin-top: 2.4rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: #29b5d1;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  /* Only necessary for .btn  */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on original state */
+  transition: all 0.3s;
+}
+
+.btn--primary:link,
+.btn--primary:visited {
+    background-color: #e9f0f1;
+    color: #1c8ea5;
+}
+
+.btn--primary:hover,
+.btn--primary:active {
+    background-color: #dbe7e9;
+    color: #197d91;
+}
+
+.btn--secondary:link,
+.btn--secondary:visited {
+    background-color: #e4af96;
+    color: #833a15;
+}
+
+.btn--secondary:hover,
+.btn--secondary:active {
+    background-color: #e4af96;
+    color: #5c290f;
+}
+
+/* ABOUT SECTION */
+
+.section-about {
+    padding: 3.2rem 0;
+}
+
+.section-about__text {
+    font-size: 2rem;
+    color: #41342d;
+    max-width: 100rem;
+    margin: 0 auto 1rem auto;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.section-about__text:last-child {
+    margin-top: 3rem;
+}
+
+/* PROJECTS SECTION */
+.project--description {
+    color: #41342d;
+    margin-bottom: 4.8rem;
+}
