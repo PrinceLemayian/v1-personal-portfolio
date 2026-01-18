@@ -269,32 +269,34 @@ body {
 
 /* SKILLS SECTION */
 .skills__container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    place-items: center;
+    margin: 1.6rem auto 4.8rem auto;
 }
 
 .skill-icon {
-    width: 8rem;
-    height: 8rem;
+    width: 5rem;
+    height: 5rem;
     color: #d66c37;
 }
 
 .skill-card__title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #14697a;
-    margin-top: 1.6rem;
+    margin-top: 1.2rem;
     text-align: center;
 }
 
 .skill-card {
-    width: 18rem;
+    width: 12rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.2rem;
-    padding: 2rem 3rem;
-    margin: 3rem auto 4.8rem auto;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    padding: 2rem 7rem;
+    margin: 3.2rem auto 2rem auto;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.045);
   background-color: #eae9ee;
   border-radius: 10px;
 
