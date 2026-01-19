@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Inter', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
     font-weight: 400;
     color: #555;
@@ -27,9 +27,6 @@ body {
     height: 7rem;
     background-color: #e6f2f5;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.header__container {
     max-width: 120rem;
     height: 100%;
     margin: 0 auto;
@@ -74,7 +71,7 @@ body {
 
 .header__nav-link.nav-cta:link,
 .header__nav-link.nav-cta:visited {
-    padding: 1rem 2rem;
+    padding: 1.4rem 2rem;
     background-color: #29b5d1;
     color: #ffffff;
     border: none;
@@ -87,6 +84,24 @@ body {
 .header__nav-link.nav-cta:active {
     background-color: #4fa6b8;
 }
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 
 /* HERO SECTION */
 
