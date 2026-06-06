@@ -1,6 +1,7 @@
 "use strict";
 
 const nav = document.querySelector(".header__nav");
+const allSections = document.querySelectorAll(".section");
 
 // NAVIGATION
 // Menu Fade animation
@@ -19,6 +20,32 @@ const handleHover = function (e) {
 
 nav.addEventListener("mouseover", handleHover.bind(0.5));
 nav.addEventListener("mouseout", handleHover.bind(1));
+
+// Reveal sections
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+allSections.forEach(function (section) {
+  section.classList.add("section--hidden");
+  sectionObserver.observe(section);
+});
+// allSections.forEach(function (section) {
+//   const rect = section.getBoundingClientRect();
+//   if (rect.top > window.innerHeight) {
+//     section.classList.add("section--hidden");
+//   }
+//   sectionObserver.observe(section);
+// });
 
 // FOOTER
 
