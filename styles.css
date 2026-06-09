@@ -8,7 +8,6 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -195,13 +194,14 @@ body {
 /* Sections fade in */
 .section {
   transition:
-    transform 1s,
-    opacity 1s;
+    transform 0.7s ease-out,
+    opacity 0.7s ease-out;
+  will-change: transform, opacity;
 }
 
 .section--hidden {
   opacity: 0;
-  transform: translateY(8rem);
+  transform: translateY(4rem);
 }
 
 /* ABOUT SECTION */
@@ -419,4 +419,3 @@ body {
   color: #555;
   font-style: italic;
 }
-
