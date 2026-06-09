@@ -36,14 +36,7 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 });
 
 allSections.forEach(function (section) {
-  section.classList.add("section--hidden");
-  sectionObserver.observe(section);
-});
-
-allSections.forEach(function (section) {
-  const rect = section.getBoundingClientRect();
-
-  if (rect.top > window.innerHeight * 0.8) {
+  if (section.getBoundingClientRect().top > window.innerHeight) {
     section.classList.add("section--hidden");
   }
   sectionObserver.observe(section);
